@@ -63,14 +63,14 @@ npm start
 # Development mode (with auto-reload)
 npm run dev
 ```
-Available at your primary URL https://rtrp-project-psionist.onrender.com
+Available at your primary URL https://rtrp-project-psionist-1.onrender.com
 
 
 The server serves both the backend API and frontend static files, so you only need to run one command!
 
 ## How to Play
 
-1. Open 'https://rtrp-project-psionist.onrender.com' in your browser
+1. Open 'https://rtrp-project-psionist-1.onrender.com' in your browser
 2. Think of any real or fictional character (person, superhero, historical figure, movie character, etc.)
 3. Click "Start Game" to begin
 4. Answer Psionist's yes/no questions honestly
