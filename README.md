@@ -64,13 +64,13 @@ npm start
 npm run dev
 ```
 
-The application will be available at `http://localhost:10000`
+The application will be available at `https://harshita428.github.io/RTRP_PROJECT_psionist/`
 
 The server serves both the backend API and frontend static files, so you only need to run one command!
 
 ## How to Play
 
-1. Open `http://localhost:10000` in your browser
+1. Open `https://harshita428.github.io/RTRP_PROJECT_psionist/` in your browser
 2. Think of any real or fictional character (person, superhero, historical figure, movie character, etc.)
 3. Click "Start Game" to begin
 4. Answer Psionist's yes/no questions honestly
@@ -104,12 +104,11 @@ Edit `server.js` to modify:
 - `MAX_QUESTIONS = 20` - Maximum questions before forcing a guess
 - `AUTO_GUESS_AFTER = 10` - Questions before auto-switching to guess mode
 - `MAX_GUESSES = 3` - Maximum number of guesses allowed
-- `MODEL = "llama-3.3-70b-versatile"` - LLM model to use
 - `PORT = 10000` - Server port (can also be set in .env)
 
 ### Frontend Configuration
 Edit `app.js` to modify:
-- `API_URL = 'http://localhost:10000'` - Backend API URL
+- `API_URL = 'https://harshita428.github.io/RTRP_PROJECT_psionist/'` - Backend API URL
 - `MAX_GUESSES = 3` - Maximum guesses (should match backend)
 
 ## Project Files
@@ -127,7 +126,7 @@ Edit `app.js` to modify:
 ### Server won't start
 - Ensure all dependencies are installed: `npm install`
 - Check that your GROQ_API_KEY is set in `.env`
-- Verify port 8000 is not in use (or change PORT in .env)
+- Verify port 10000 is not in use (or change PORT in .env)
 - Check Node.js version: `node --version` (should be 14+)
 
 ### Game not working properly
