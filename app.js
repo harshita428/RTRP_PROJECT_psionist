@@ -1,5 +1,10 @@
 // Configuration
-const API_URL = 'http://localhost:8000';
+let API_URL = "https://harshi-psionist.onrender.com";
+
+if (window.location.hostname === "localhost") {
+  API_URL = "http://localhost:10000";
+}
+console.log('Psionist game initialized. Backend API URL:', API_URL);
 const MAX_GUESSES = 3;
 
 // Game state
@@ -112,7 +117,7 @@ async function apiPost(path, payload = {}) {
         return await response.json();
     } catch (error) {
         if (error.message.includes('Failed to fetch')) {
-            throw new Error('Cannot connect to the backend. Make sure FastAPI is running on port 8000.');
+            throw new Error('Cannot connect to the backend. Make sure FastAPI is running on port 10000.');
         }
         throw error;
     }
@@ -384,7 +389,3 @@ elements.correctAnswerInput.addEventListener('keypress', (e) => {
     }
 });
 
-// Initialize
-console.log('Psionist game initialized. Make sure the backend is running on http://localhost:8000');
-
-// Made with Bob

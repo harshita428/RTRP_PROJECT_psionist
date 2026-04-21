@@ -4,7 +4,7 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 10000;
 
 // Middleware
 app.use(cors());
@@ -98,6 +98,12 @@ function generateSessionId() {
 }
 
 // Routes
+app.get('/config', (req, res) => {
+    res.json({
+        apiUrl: process.env.API_URL || `http://localhost:${PORT}`
+    });
+});
+
 app.get('/', (req, res) => {
     res.json({ message: 'Psionist backend running.' });
 });
@@ -251,4 +257,3 @@ app.listen(PORT, () => {
     console.log(`Make sure GROQ_API_KEY is set in .env file`);
 });
 
-// Made with Bob
